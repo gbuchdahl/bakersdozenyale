@@ -12,7 +12,8 @@ storiesOf("Hero", module)
   .add("with background image", () => (
     <Hero
       fluid
-      title="The Baker's Dozen of Yale University"
+      title="The Baker's Dozen"
+      subtitle="of Yale University"
       background={coverPhoto}
     />
   ));

@@ -1,17 +1,9 @@
 import React from "react";
-import "./styles/mod_bootstrap.scss";
-import { Container, Row } from "react-bootstrap";
-import MyNavBar from "./components/MyNavBar";
+import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 
 function App() {
-  return (
-    <Container fluid={true} classname="no-gutters">
-      <Row>
-        <MyNavBar />
-      </Row>
-    </Container>
-  );
+  return <Hero title="hello" />;
 }
 
 export default App;

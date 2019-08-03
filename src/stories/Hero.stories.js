@@ -4,16 +4,15 @@ import coverPhoto from "../img/main_photo.jpg";
 
 import Hero from "../components/Hero";
 
+const bghero = (
+  <Hero
+    fluid
+    title="The Baker's Dozen"
+    subtitle="of Yale University"
+    background={coverPhoto}
+  />
+);
+
 storiesOf("Hero", module)
-  .add("default", () => <Hero />)
-  .add("with title", () => (
-    <Hero title="The Baker's Dozen of Yale University" />
-  ))
-  .add("with background image", () => (
-    <Hero
-      fluid
-      title="The Baker's Dozen"
-      subtitle="of Yale University"
-      background={coverPhoto}
-    />
-  ));
+  .add("with background image", () => bghero)
+  .add("mobile", () => bghero, { viewport: { defaultViewport: "iphonex" } });

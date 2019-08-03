@@ -1,10 +1,19 @@
 import React from "react";
+import styled from "styled-components";
 
 const Hero = props => {
+  const Title = styled.h1.attrs({
+    className: "f1 f-headline-ns white ma0 pv4 pv6-ns fw4 tc cut"
+  })`
+    font-family: "Bangers", cursive;
+    background-image: url(${props.background});
+    background-size: cover;
+  `;
+
   return (
-    <div>
-      <h1>{props.title}</h1>
-      <h2>{props.subtitle}</h2>
+    <div className="w-100">
+      <Title>{props.title}</Title>
+      {props.children}
     </div>
   );
 };

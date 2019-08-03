@@ -18,8 +18,8 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "css": "tachyons src/styles/app.css > src/index.css --minify",
-    "prestart": "npm run css",
-    "prebuild": "npm run css"
+    "prestart": "yarn run css",
+    "prebuild": "yarn run css"
   },
   "eslintConfig": {
     "extends": "react-app"

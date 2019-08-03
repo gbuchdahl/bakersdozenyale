@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Navbar, Nav, Image, Col, Container, Row } from "react-bootstrap";
+import hamburger from "../img/hamburger.svg";
 
 import logo from "../img/bd_logo_2019.png";
 
@@ -15,6 +16,7 @@ export default class MyNavBar extends Component {
             <Navbar.Toggle
               className="ml-auto"
               aria-controls="basic-navbar-nav"
+              image={hamburger}
             />
             <Navbar.Collapse
               className="justify-content-end"

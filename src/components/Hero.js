@@ -1,18 +1,20 @@
 import React from "react";
-import { Jumbotron } from "react-bootstrap";
+import styled from "styled-components";
 
 const Hero = props => {
-  const style = {
-    backgroundImage: `url(${props.background})`,
-    backgroundSize: "cover"
-  };
+  const Title = styled.h1.attrs({
+    className: "f1 f-headline-ns white ma0 pv4 pv6-ns fw4 tc cut"
+  })`
+    font-family: "Bangers", cursive;
+    background-image: url(${props.background});
+    background-size: cover;
+  `;
 
   return (
-    <Jumbotron classname="h-50" style={style}>
-      <h1 className="text-light text-center font-weight-bold display-2 px-lg-4 py-lg-5 px-sm-2 ">
-        {props.title}
-      </h1>
-    </Jumbotron>
+    <div className="w-100">
+      <Title>{props.title}</Title>
+      {props.children}
+    </div>
   );
 };
 

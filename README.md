@@ -7,9 +7,9 @@ Written, designed, maintained by Gabriel Buchdahl
 - ReactJS for frontend rendering
 - `prettier` and `husky` for automatic linting
 - `storybook` for component-first development
-- Sass and `react-bootstrap` for styling
+- `tachyons` and `styled-components` for styling
 - Figma for design
-- Eventually deployed to Firebase\
+- Eventually deployed to Firebase
 
 ### Development
 

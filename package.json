@@ -17,9 +17,10 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "css": "tachyons src/styles/app.css > src/index.css --minify",
+    "css": "tachyons src/styles/app.css > src/index.css",
+    "build-css": "tachyons src/styles/app.css > src/index.css --minify",
     "prestart": "yarn run css",
-    "prebuild": "yarn run css"
+    "prebuild": "yarn run build-css"
   },
   "eslintConfig": {
     "extends": "react-app"

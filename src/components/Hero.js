@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Hero = props => {
   const Title = styled.h1.attrs({
-    className: "f1 f-headline-ns white ma0 pv4 pv6-ns fw4 tc cut"
+    className: "f1 f-headline-ns white ma0 pv6-ns pt7 pb4 fw4 tc cut"
   })`
     font-family: "Bangers", cursive;
     background-image: url(${props.background});

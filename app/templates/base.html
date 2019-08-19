@@ -5,20 +5,21 @@
   {% block  head %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet"
+   type = "text/css"
+   href = "{{url_for('static', filename='css/style.css')}}" />
   <title>{% block title %}{% endblock %}</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   {% endblock %}
 </head>
 
 <body class='has-navbar-fixed-top'>
   {% block nav %}{% endblock nav %}
-  <div id="content">{% block content %}{% endblock %}</div>
+  {% block content %}{% endblock %}
   <div id="footer">
     {% block footer %}
     <footer class="footer">
       <div class="content has-text-centered">
-        <p>The Baker's Dozen of Yale, 2019</p>
+        <p>&copy; The Baker's Dozen of Yale, 2019</p>
       </div>
     </footer>
     {% endblock %}

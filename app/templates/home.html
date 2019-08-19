@@ -1,9 +1,45 @@
 {% extends "page.html" %}
 
 {% block content %}
-<section class="hero is-dark is-medium">
+<section class="hero home-hero is-dark is-medium">
     <div class="hero-body has-text-centered">
-        <h1 class="title">The Baker's Dozen of Yale</h1>
+        <h1 class="title is-1">The Baker's Dozen of Yale</h1>
     </div>
+</section>
+<section class="section is-medium">
+    <div class="container">
+        <div class="columns is-desktop">
+            <div class="column has-text-centered">
+                <h1 class="title is-2">About Us</h1>
+            </div>
+            <div class="column">
+                <p>In the summer of 1947, thirteen men with an unrivaled passion for music and revelry banded together to form the dynamic brotherhood known as The Baker’s Dozen. Known across America as one of the nation’s oldest and finest a cappella singing groups, The Baker’s Dozen continues its tradition of memorable performances with a wide variety of audiences.</p>
+                <div class="has-text-centered">
+                    <a class="button is-black is-uppercase has-text-weight-bold" style="margin-top: 20px">Audition</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cut columns section is-medium is-paddingless">
+    <div class="column is-paddingless">
+        <img src="{{ url_for('static', filename='img/gwb_solo.jpg') }}">
+    </div>
+</section>
+<section class="section is-medium">
+    <div class="container">
+        <div class="columns is-desktop">
+            <div class="column has-text-centered is-half">
+                <h1 class="title is-2">Rush the BDs</h1>
+            </div>
+            <div class="column is-half">
+                <p>So you’ve come to Yale. You might know from day one that you are just dying to be a BD. Or you might not be sure, and want to know more about us. What do you do? Welcome to Rush.</p>
+                <div class="has-text-centered">
+                    <a class="button is-black is-uppercase has-text-weight-bold" style="margin-top: 20px">Audition</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
 {% endblock content %}

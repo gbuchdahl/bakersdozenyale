@@ -1,4 +1,14 @@
-$body-background-color: $beige-lighter;
+@charset "utf-8"
 
-@charset "utf-8";
-@import "../bulma-0.7.5/bulma/bulma.sass";
+$body-background-color: #CDECFF
+
+@import "./bulma-0.7.5/bulma.sass"
+   
+.home-hero
+    @extend .hero
+    background-image: url('https://raw.githubusercontent.com/gbuchdahl/bakersdozenyale/master/src/img/main_photo.jpg')
+    background-size: cover
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%)
+
+.cut
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%)

@@ -1,5 +1,9 @@
 import React from "react";
+import Hero from "../components/Hero";
+import aboutImg from "../img/restaurant.jpg";
 
-const About = () => <h1 className="is-title">About</h1>;
+const About = props => {
+  return <Hero title="About Us" img={aboutImg} />;
+};
 
 export default About;

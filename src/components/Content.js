@@ -3,9 +3,6 @@ import { Link } from "@reach/router";
 import styled from "styled-components";
 
 const Content = props => {
-  const MyButton = styled(Link)`
-    // margin-top: 20px;
-  `;
   return (
     <section className="section is-medium">
       <div className="container">
